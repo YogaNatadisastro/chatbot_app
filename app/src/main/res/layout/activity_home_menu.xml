@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMenuActivity"
+    android:background="@drawable/fixbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="3"/>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:paddingTop="10dp"
+            android:padding="4dp"
+            android:rowCount="2"
+            android:scrollbars="horizontal"
+            app:srcCompat="@drawable/backgroundfix">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="#7DBAE4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:srcCompat="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:srcCompat="@drawable/doctor" />
+
+                    <Button
+                        android:id="@+id/btnUrShine"
+                        android:layout_width="match_parent"
+                        android:backgroundTint="#FFE976"
+                        android:layout_height="40dp"
+                        android:text="UR SHINE"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="#254965" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="#7DBAE4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/apotex"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:srcCompat="@drawable/medicine" />
+
+                    <Button
+                        android:id="@+id/btnApotek"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#FFE976"
+                        android:text="UR APOTEK"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="#254965" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="189dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="#7DBAE4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bot" />
+
+                    <Button
+                        android:id="@+id/btnChatBot"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:backgroundTint="#FFE976"
+                        android:text="UR PARTNER"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="#254965" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/centerGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:paddingTop="10dp"
+            android:padding="4dp"
+            android:rowCount="2"
+            android:scrollbars="horizontal"
+            app:srcCompat="@drawable/backgroundfix">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="#7DBAE4"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/video" />
+
+                    <Button
+                        android:id="@+id/btnUrMovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#FFE976"
+                        android:text="UR MOVIE"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="#254965" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="#7DBAE4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:src="@drawable/diary" />
+
+                    <Button
+                        android:id="@+id/btnDiary"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#FFE976"
+                        android:text="UR DIARY"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="#254965" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_background"
+        android:layout_margin="12dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

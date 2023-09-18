@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "821663210388",
+    "firebase_url": "https://mental-app-7fdce-default-rtdb.firebaseio.com",
+    "project_id": "mental-app-7fdce",
+    "storage_bucket": "mental-app-7fdce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821663210388:android:752c5bcfb9bacf0e4c4d81",
+        "android_client_info": {
+          "package_name": "com.app.chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821663210388-a6qke2i4a81u6jnfk773644kqucpe4pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDxLYvbfcLNY1oPFkX2u4X_xJuTj7ww5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821663210388-a6qke2i4a81u6jnfk773644kqucpe4pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

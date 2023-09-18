@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg"
+    tools:context=".DetailChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="110dp"
+            android:layout_height="103dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tvNameDokter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgProfile"
+            android:text="@string/doctor"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rlChatDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlProfile">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChatDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_messages" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/rlChatDetail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView">
+
+        <EditText
+            android:id="@+id/EditChatDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="Enter Message"
+            android:inputType="text"
+            android:maxLines="6"
+            android:paddingStart="10dp"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/btSendDoc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/send"
+            android:contentDescription="send" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
